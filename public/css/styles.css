@@ -21,7 +21,8 @@ html {
 
 section {
     width: 100vw;
-    height: 1080px;
+    height: 100vh;
+    min-height: 925px;
 }
 
 h2 {
@@ -44,36 +45,44 @@ button,
 .button {
     width: 348px;
     height: 71px;
-    background-image: linear-gradient(to right, var(--yellow), var(--dark-yellow));
+    background-image: linear-gradient(to right, var(--dark-yellow) 0%, var(--yellow) 50%, white 150%);
+    background-size: 200% auto;
+    transition: 1s;
     border-radius: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
     font-weight: 700;
-    color: var(--red)
+    color: var(--red);
+    
 }
 
 button:hover,
 .button:hover {
     cursor: pointer;
-   
+    background-position: right center;
 }
 
 /* Header */
 
 header {
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 118px;
+    padding: 0 28px;
     background: transparent;
     z-index: 100;
 }
 
 header img {
+    position: absolute;
     width: 95px;
     height: auto;
-    margin-left: 28px;
+}
+
+#red-logo {
+    opacity: 0;
 }
 
 /* Welcome */
@@ -115,5 +124,21 @@ header img {
     margin: 33px auto;
 }
 
+/* About */
+.about {
+    background-color: var(--light-blue);
+}
+
+/* Projects */
+.projects {
+    position: relative;
+    display: block;
+    background: url("../img/background__projects.jpg") no-repeat center bottom;
+}
+
+/* Connect */
+.connect {
+    background-color: var(--red);
+}
 
 
