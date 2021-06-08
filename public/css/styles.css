@@ -31,10 +31,29 @@ h2 {
     color: white;
 }
 
+h3 {
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+}
+
 hr {
     width: 101px;
-    border-top: 8px solid white;
+    border: 4px solid white;
     border-radius: 8px;
+}
+
+p {
+    font-weight: 600;
+    font-size: 35px;
+    color: white;
 }
 
 li {
@@ -48,6 +67,7 @@ button,
     background-image: linear-gradient(to right, var(--dark-yellow) 0%, var(--yellow) 50%, white 150%);
     background-size: 200% auto;
     transition: 1s;
+    border: none;
     border-radius: 36px;
     display: flex;
     align-items: center;
@@ -126,14 +146,85 @@ header img {
 
 /* About */
 .about {
+    position: relative;
     background-color: var(--light-blue);
+    display: flex;
+    align-items: center;
+}
+
+.about__portrait {
+    position: absolute;
+    width: 1055px;
+    height: auto;
+    left: -95px;
+    bottom: -10px;
+}
+
+.about__text {
+    position: absolute;
+    width: 870px;
+    height: 900px;
+    text-align: right;
+    right: 90px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.about__quote h2,
+.about__quote h3 {
+    color: var(--yellow);
+}
+
+.about__icons {
+    width: 870px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /* Projects */
 .projects {
     position: relative;
-    display: block;
     background: url("../img/background__projects.jpg") no-repeat center bottom;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projects__browser {
+    width: 1473px;
+    height: 829px;
+    background: white;
+    border-radius: 20px;
+}
+
+.projects__browser-header {
+    position: relative;
+    width:100%;
+    height: 55px;
+    background: rgb(80, 80, 80);
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects__browser-actions {
+    position: absolute;
+    left: 100px;
+    width: 20px;
+    height: 20px;
+    border-radius:  50%;
+    background-color: rgb(103, 233, 103);
+    box-shadow: -40px 0 var(--yellow),
+    -80px 0 var(--red);
+}
+
+#right-arrow {
+    transform: rotate(180deg);
 }
 
 /* Connect */
