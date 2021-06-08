@@ -60,8 +60,7 @@ li {
     list-style: none;
 }
 
-button,
-.button {
+button{
     width: 348px;
     height: 71px;
     background-image: linear-gradient(to right, var(--dark-yellow) 0%, var(--yellow) 50%, white 150%);
@@ -78,8 +77,7 @@ button,
     
 }
 
-button:hover,
-.button:hover {
+button:hover {
     cursor: pointer;
     background-position: right center;
 }
@@ -131,7 +129,7 @@ header img {
     flex-direction: row;
 }
 
-.welcome__buttons a {
+.welcome__buttons button {
     margin-right: 40px;
 }
 
@@ -187,14 +185,25 @@ header img {
 /* Projects */
 .projects {
     position: relative;
-    background: url("../img/background__projects.jpg") no-repeat center bottom;
+    background: url("../img/background__projects.jpg") no-repeat center;
+    background-size: cover;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
 
+.projects__container {
+    position: relative;
+    height: 100%;
+    width:1473px;
+    height: 829px;
+    display: flex;
+    flex-direction: row;
+}
+
 .projects__browser {
+    position: absolute;
     width: 1473px;
     height: 829px;
     background: white;
@@ -223,8 +232,57 @@ header img {
     -80px 0 var(--red);
 }
 
+.projects__arrow-container {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects__arrow {
+    position: relative;
+    transition: 1s;
+}
+
+.projects__arrow:hover {
+    cursor: pointer;
+}
+
 #right-arrow {
     transform: rotate(180deg);
+}
+
+#left-arrow {
+    display: none;
+}
+
+#right-arrow:hover{
+    transform: translateX(10px) rotate(180deg);
+}
+
+#left-arrow:hover {
+    transform: translateX(-10px);
+}
+
+
+#project-1 {
+
+}
+
+#project-2 {
+    display: none;
+    background: var(--blue);
+}
+
+#project-3 {
+    display: none;
+    background: var(--yellow);
+}
+
+#project-4 {
+    display: none;
+    background: var(--red);
 }
 
 /* Connect */
