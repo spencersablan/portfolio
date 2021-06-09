@@ -196,6 +196,14 @@ header img {
     background: url("../img/background__projects.jpg") no-repeat left;
     background-size: cover;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects__functions {
+    padding: 30px 0;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -203,8 +211,8 @@ header img {
 
 .projects__container {
     position: relative;
-    width: 1100px;
-    height: 650px;
+    width: 1500px;
+    height: 900px;
 }
 
 .projects__browser {
@@ -287,6 +295,31 @@ header img {
 
 }
 
+.projects__dots {
+    position: relative;
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: .4;
+}
+
+#dot-1 {
+    opacity: 1;
+}
+
+
+
 /* Connect */
 .connect {
     background-color: var(--red);
@@ -315,6 +348,7 @@ textarea {
     font-weight: 600;
     border: none;
     border-bottom: 4px solid white;
+    border-radius: 0;
     font-size: 40px;
     padding: 10px 0;
     margin: 20px 0;
@@ -512,6 +546,15 @@ textarea::placeholder {
         opacity: .05;
     }
 
+    .projects__container {
+        width: 600px;
+        height: 400px;
+    }
+
+    .projects__arrow-container {
+        display: none;
+    }
+
     .connect {
         height: 950px;
         flex-direction: column;
@@ -542,6 +585,10 @@ textarea::placeholder {
         border-radius: 4px;
     }
 
+    header {
+        height: 60px;
+    }
+
     header img {
         width: 40px;
     }
@@ -569,6 +616,10 @@ textarea::placeholder {
         display: none;
     }
 
+    .about {
+        justify-content: center;
+    }
+
     .about__blue-overlay {
         display: none;
     }
@@ -577,10 +628,11 @@ textarea::placeholder {
         text-align: left;
         align-items: flex-start;
         width: 300px;
+        right: auto;
     }
 
     .projects {
-        height:700px
+        height:800px
     }
 
     .projects__container {
@@ -613,6 +665,15 @@ textarea::placeholder {
     .projects__arrow-container {
         display: none;
     }
+
+    .projects__dots {
+        width: 120px;
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+    }
     
     .connect {
        height: 870px;
@@ -634,8 +695,14 @@ textarea::placeholder {
         width: 300px;
     }
 
+    .connect__social-icons li {
+        margin:auto;
+    }
+
 
     .connect__contact-container span {
         display: none;
     }
 }
+
+
