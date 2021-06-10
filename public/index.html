@@ -7,6 +7,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+        src="https://code.jquery.com/mobile/1.5.0-rc1/jquery.mobile-1.5.0-rc1.min.js"
+        integrity="sha256-c3VbCrdCtTHmXYAuxRT4D0Cy5VC/0zBnXVRIvJiV9xo="
+        crossorigin="anonymous" defer>
+    </script>
+    <script src="js/logo.js" defer> </script>
+    <script src="js/projects.js" defer></script>
+    <script src="js/buttons.js" defer></script>
     <title>Spencer Sablan</title>
 </head>
 <body>
@@ -21,7 +30,7 @@
                 <hr>
                 <h2>I'm <span class="yellow">Spencer Sablan</span>, <br>a web-developer<br>from Phoenix, AZ.</h2>
                 <div class="welcome__buttons">
-                    <button>connect with me</button>
+                    <button id="connect-button">connect with me</button>
                     <button>my resume</button>
                 </div>
             </div>
@@ -88,14 +97,14 @@
                 <div id="dot-4" class="dot"></div>
             </div>
         </section>
-        <section class="connect">
+        <section id="connect" class="connect">
             <form>
                 <h2>Let's Connect.</h2>
-                <input data-role="none" type="text"  placeholder="Full Name*" required>
-                <input data-role="none" type="text" placeholder="Company">
-                <input data-role="none" type="email" placeholder="Email*">
-                <input data-role="none" type="tel" placeholder="Phone">
-                <textarea placeholder="Message"></textarea>
+                <input name="name" data-role="none" type="text"  placeholder="Full Name*" required>
+                <input name="company" data-role="none" type="text" placeholder="Company">
+                <input name="email" data-role="none" type="email" placeholder="Email*">
+                <input name="phone" data-role="none" type="tel" placeholder="Phone">
+                <textarea name="message" placeholder="Message"></textarea>
                 <button type="submit">Send</button>
             </form>
             <div class="connect__contact-container">
@@ -117,13 +126,6 @@
             </div>
         </section>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script
-        src="https://code.jquery.com/mobile/1.5.0-rc1/jquery.mobile-1.5.0-rc1.min.js"
-        integrity="sha256-c3VbCrdCtTHmXYAuxRT4D0Cy5VC/0zBnXVRIvJiV9xo="
-        crossorigin="anonymous">
-    </script>
-    <script src="js/logo.js"> </script>
-    <script src="js/projects.js"></script>
+   
 </body>
 </html>
