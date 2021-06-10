@@ -29,6 +29,7 @@ h2 {
     font-weight: 900;
     font-size: 80px;
     color: white;
+    transition: 2s;
 }
 
 h3 {
@@ -329,11 +330,17 @@ header img {
     justify-content: center;
 }
 
+.form-container {
+    width: 708px;
+    margin-right: 200px;
+}
+
 form {
     display: flex;
     flex-direction: column;
-    width: 708px;
-    margin-right: 200px;
+    width: 100%;
+    height: auto;
+    
 }
 
 form button {
@@ -438,7 +445,7 @@ textarea::placeholder {
         height: auto
     }
 
-    form {
+    .form-container {
         width: 500px;
         margin-right: 125px;
     }
@@ -502,7 +509,7 @@ textarea::placeholder {
         height: 500px;
     }
 
-    form {
+    .form-container {
         width: 375px;
         margin-right: 100px;
     }
@@ -560,7 +567,7 @@ textarea::placeholder {
         flex-direction: column;
     }
 
-    form {
+    .form-container {
         margin-right: 0;
         margin-bottom: 80px;
     }
@@ -679,9 +686,12 @@ textarea::placeholder {
        height: 870px;
     }
 
+    .form-container {
+        width:300px;
+    }
+
     form {
         align-items: center;
-        width:300px;
     }
 
     input,
