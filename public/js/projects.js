@@ -33,7 +33,7 @@ const goToNextProject = () => {
     $('#left-arrow').show()
 
     $(projectsToShow[projectShowing]).animate({left: -100, opacity: "hide"}, 300)
-    $(projectsToShow[nextProject]).delay(100).animate({right: 0, opacity: "show"}, 300)
+    $(projectsToShow[nextProject]).delay(200).animate({right: 0, opacity: "show"}, 300)
 
     $(dots[projectShowing]).fadeTo(600, .4)
     $(dots[nextProject]).fadeTo(600, 1)
