@@ -165,7 +165,7 @@ header img {
 
 .welcome__arrow {
     position: absolute;
-    bottom: 10px;
+    bottom: 50px;
     width: 46px;
     height:auto;
     left: calc(50% - 23px)
@@ -773,7 +773,8 @@ textarea::placeholder {
     }
 
     .welcome__arrow {
-        left: calc(50% -15px)
+        left: calc(50% -15px);
+        width: 30px;
     }
 
     .about {
