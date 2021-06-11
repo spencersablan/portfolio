@@ -9,3 +9,12 @@ $('.welcome__arrow').on('click', () => {
         scrollTop: $('#about').offset().top
     }, 500)
 })
+
+$(document).scroll(() => {
+    if ($(document).scrollTop() > 500) {
+        return $('.welcome__arrow').fadeOut()
+    }
+
+    $('.welcome__arrow').fadeIn()
+})
+
