@@ -36,12 +36,17 @@ h3 {
     font-weight: 700;
     font-size: 40px;
     color: white;
-
 }
 
 h4 {
     font-weight: 500;
     font-size: 24px;
+    color: white;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 35px;
     color: white;
 }
 
@@ -61,7 +66,8 @@ li {
     list-style: none;
 }
 
-button{
+button,
+.button {
     width: 348px;
     height: 71px;
     background-image: linear-gradient(to right, var(--dark-yellow) 0%, var(--yellow) 50%, white 150%);
@@ -75,10 +81,12 @@ button{
     font-size: 30px;
     font-weight: 700;
     color: var(--red);
+    text-decoration: none;
     
 }
 
-button:hover {
+button:hover,
+.button:hover {
     cursor: pointer;
     background-position: right center;
 }
@@ -213,7 +221,7 @@ header img {
 .projects__container {
     position: relative;
     width: 1500px;
-    height: 900px;
+    height: 811px;
 }
 
 .projects__browser {
@@ -222,10 +230,13 @@ header img {
     height: 100%;
     background: white;
     border-radius: 20px;
+    display: flexbox;
+    flex-direction: column;
 }
 
 .projects__browser-header {
     position: relative;
+    top: 0;
     width:100%;
     height: 55px;
     background: rgb(80, 80, 80);
@@ -233,6 +244,7 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .projects__browser-actions {
@@ -243,7 +255,92 @@ header img {
     border-radius:  50%;
     background-color: rgb(103, 233, 103);
     box-shadow: -40px 0 var(--yellow),
-    -80px 0 var(--red);
+                -80px 0 var(--red);
+}
+
+.projects__browser-display {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 55px);
+    border-radius: 0 0 20px 20px;
+    background-image: url('../img/projects__accelerate.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    z-index: 0;
+}
+
+.projects__description {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 20px 20px;
+    background: #0049b7e8;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: .5s;
+    z-index: 1;
+}
+
+#description-1:hover,
+#description-2:hover,
+#description-3:hover,
+#description-4:hover,
+#description-1:focus,
+#description-2:focus,
+#description-3:focus,
+#description-4:focus {
+    opacity: 1;
+}
+
+
+
+.projects__description-links {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects__description-links .button {
+    color: var(--blue);
+    margin: 0 20px;
+}
+
+.projects__description-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects__description-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 120px;
+    margin:10px 0
+}
+
+.projects__description-row h5 {
+    width: 220px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.projects__description-row p {
+    width: 900px;
+    margin-left: 20px
+
+}
+
+.projects__description-row span {
+    height: 100%;
+    border: 4px solid var(--yellow);
+    border-radius: 4px;
 }
 
 .projects__arrow-container {
@@ -262,6 +359,8 @@ header img {
 .projects__arrow:hover {
     cursor: pointer;
 }
+
+
 
 #right-arrow {
     transform: rotate(180deg);
@@ -417,7 +516,7 @@ textarea::placeholder {
     h3 {
         font-size: 30px;
     }
-    p {
+    h5,p {
         font-size: 25px;
     }
 
@@ -436,8 +535,16 @@ textarea::placeholder {
     }
 
     .projects__container {
-        height: 650px;
         width: 1100px;
+        height: 610px;
+    }
+
+    .projects__description-row h5 {
+        width: 180px;
+    }
+
+    .projects__description-row p {
+        width: 700px;
     }
     
     .projects__arrow {
@@ -471,11 +578,12 @@ textarea::placeholder {
         font-size: 20px;
     }
     
-    p {
+    h5,p {
         font-size: 20px;
     }
 
-    button {
+    button,
+    .button {
         width: 200px;
         height: 45px;
         font-size: 18px;
@@ -506,7 +614,15 @@ textarea::placeholder {
 
     .projects__container {
         width: 800px;
-        height: 500px;
+        height: 458px;
+    }
+
+    .projects__description-row h5 {
+        width: 120px;
+    }
+
+    .projects__description-row p {
+        width: 500px;
     }
 
     .form-container {
@@ -555,7 +671,19 @@ textarea::placeholder {
 
     .projects__container {
         width: 600px;
-        height: 400px;
+        height: 358px;
+    }
+
+    .projects__description-row {
+        height: 100px;
+    }
+
+    .projects__description-row h5 {
+        width: 120px;
+    }
+
+    .projects__description-row p {
+        width: 375px;
     }
 
     .projects__arrow-container {
@@ -584,7 +712,7 @@ textarea::placeholder {
     h3 {
         font-size: 18px;
     }
-    p {
+    h5, p {
         font-size: 16px;
     }
     hr {
@@ -644,7 +772,7 @@ textarea::placeholder {
 
     .projects__container {
         width: 300px;
-        height: 615px;
+        height: 649px;
     }
 
     .projects__browser {
@@ -654,11 +782,12 @@ textarea::placeholder {
     }
 
     .projects__browser-header {
-        height:30px;
-        width: 160px;
+        position: absolute;
+        height:25px;
+        width: 150px;
         background: black;
         border-radius: 0 0 15px 15px;
-        left: calc(50% - 80px)
+        left: calc(50% - 75px)
     }
 
     .projects__browser-header h4 {
@@ -667,6 +796,33 @@ textarea::placeholder {
 
     .projects__browser-actions {
         display: none;
+    }
+
+    .projects__browser-display {
+        background-image: url('../img/projects__accelerate-mobile.jpeg');
+        height: 100%;
+        border-radius: 30px;
+    }
+
+    .projects__description {
+        border-radius: inherit;
+    }
+
+    .projects__description h5 {
+        display: none;
+    }
+
+    .projects__description p {
+        width: 250px;
+        margin-left: 10px;
+    }
+
+    .projects__description-links {
+        flex-direction: column;
+    }
+
+    .projects__description-links .button {
+        margin: 10px 0 0 0;
     }
 
     .projects__arrow-container {
