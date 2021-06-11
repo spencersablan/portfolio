@@ -65,6 +65,16 @@ li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    transition: 1s;
+}
+
+a:hover,
+a:focus {
+    cursor: pointer;
+}
+
 button,
 .button {
     width: 348px;
@@ -152,6 +162,17 @@ header img {
     margin: 33px auto;
 }
 
+.welcome__arrow {
+    position: absolute;
+    bottom: 10px;
+    width: 46px;
+    height:auto;
+    left: calc(50% - 23px)
+}
+
+.welcome__arrow:hover {
+    cursor: pointer;
+}
 /* About */
 .about {
     position: relative;
@@ -742,6 +763,10 @@ textarea::placeholder {
     
     .welcome__social-icons {
         display: none;
+    }
+
+    .welcome__arrow {
+        left: calc(50% -15px)
     }
 
     .about {
