@@ -66,7 +66,7 @@ li {
     list-style: none;
 }
 
-a {
+/* a {
     text-decoration: none;
     transition: 1s;
 }
@@ -74,7 +74,7 @@ a {
 a:hover,
 a:focus {
     cursor: pointer;
-}
+} */
 
 button,
 .button {
@@ -321,7 +321,9 @@ header img {
 
 
 .projects__description-links {
+    position: relative;
     width: 100%;
+    height: auto;
     margin-top: 30px;
     display: flex;
     align-items: center;
@@ -334,6 +336,8 @@ header img {
 }
 
 .projects__description-text {
+    position: relative;
+    height:auto;
     display: flex;
     flex-direction: column;
 }
