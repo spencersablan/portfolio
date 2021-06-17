@@ -19,6 +19,7 @@
     <script src="js/logo.js" defer> </script>
     <script src="js/projects.js" defer></script>
     <script src="js/buttons.js" defer></script>
+    <script src="js/form.js" defer></script>
     <title>Spencer Sablan</title>
 </head>
 <body>
@@ -118,17 +119,19 @@
                 <div id="dot-4" class="dot"></div>
             </div>
         </section>
-        <section id="connect" class="connect">
-            <form>
-                <h2>Let's Connect.</h2>
-                <input name="name" data-role="none" type="text"  placeholder="Full Name*" required>
-                <input name="company" data-role="none" type="text" placeholder="Company">
-                <input name="email" data-role="none" type="email" placeholder="Email*">
-                <input name="phone" data-role="none" type="tel" placeholder="Phone">
-                <textarea name="message" placeholder="Message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-            <div class="connect__contact-container">
+        <section id="connect" class="connect animatedParent animateOnce">
+            <div class="form-container animated fadeInUpShort delay-250">
+                <div id="connect-title"><h2>Let's Connect.</h2></div>
+                <form method="POST" action="/">
+                    <input name="name" data-role="none" type="text"  placeholder="Full Name*" required>
+                    <input name="company" data-role="none" type="text" placeholder="Company">
+                    <input name="email" data-role="none" type="email" placeholder="Email*">
+                    <input name="phone" data-role="none" type="tel" placeholder="Phone">
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="connect__contact-container animated fadeInUpShort delay-250">
                 <span></span>
                 <div class="connect__email">
                     <h3 class="yellow">Email</h3>
