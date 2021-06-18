@@ -66,7 +66,7 @@ li {
     list-style: none;
 }
 
-/* a {
+a {
     text-decoration: none;
     transition: 1s;
 }
@@ -74,7 +74,7 @@ li {
 a:hover,
 a:focus {
     cursor: pointer;
-} */
+}
 
 button,
 .button {
