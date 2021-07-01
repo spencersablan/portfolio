@@ -295,6 +295,10 @@ header img {
 }
 
 #project2-browser {
+    background-image: url('../img/followthru.png');
+}
+
+#project3-browser {
     background-image: url('../img/chat-app.png');
 }
 
@@ -787,6 +791,10 @@ textarea::placeholder {
     }
 
     #project2-browser {
+        background-image: url('../img/followthru-mobile.png');
+    }
+
+    #project3-browser {
         background-image: url('../img/chat-app-mobile.png');
     }
 
