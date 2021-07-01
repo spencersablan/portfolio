@@ -284,11 +284,18 @@ header img {
     width: 100%;
     height: calc(100% - 55px);
     border-radius: 0 0 20px 20px;
-    background-image: url('../img/projects__accelerate.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
     z-index: 0;
+}
+
+#project1-browser {
+    background-image: url('../img/projects__accelerate.jpg');
+}
+
+#project2-browser {
+    background-image: url('../img/chat-app.png');
 }
 
 .projects__description {
@@ -771,9 +778,16 @@ textarea::placeholder {
     }
 
     .projects__browser-display {
-        background-image: url('../img/projects__accelerate-mobile.jpeg');
         height: 100%;
         border-radius: 30px;
+    }
+
+    #project1-browser {
+        background-image: url('../img/projects__accelerate-mobile.jpeg');
+    }
+
+    #project2-browser {
+        background-image: url('../img/chat-app-mobile.png');
     }
 
     .projects__description {
